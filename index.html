@@ -3,36 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Scoops Ice Cream</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ice Cream Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .logo-text {
+        font-size: 1.5rem; /* Increased font size for the logo */
+        font-weight: 600;  /* Made the logo text bold */
+      }
+      .nav-link {
+        font-size: 1rem;  /* Increased font size for nav links */
+        font-weight: 400;
+      }
+      .hero-title {
+        font-size: 2.5rem; /* Increased font size for the main title */
+        font-weight: 600;  /* Made the title bold */
+        line-height: 1.2;    /* Improved line height for better readability */
+      }
+      .hero-subtitle {
+        font-size: 1.1rem; /* Increased font size for the subtitle */
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      .primary-button {
+        font-size: 1.1rem; /* Increased font size for the button */
+        font-weight: 600;
+        padding: 0.8rem 2rem; /* Adjusted padding for a larger button */
+      }
+
+      /* Added to align the image to the right */
+      .hero-image-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; /* Vertically center the image */
+      }
+
+      .hero-image {
+        max-width: 100%; /* Ensure image doesn't exceed its container */
+        height: auto;    /* Maintain aspect ratio */
+      }
+
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Sweet Scoops Ice Cream</h1>
-        <p>Colorful, dreamy, and delicious treats!</p>
+<body class="bg-gradient-to-br from-pink-100 to-yellow-100 min-h-screen flex flex-col">
+    <header class="bg-white/80 backdrop-blur-md py-4 px-6 rounded-b-xl shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="logo-text text-pink-600">Logang</a>
+            <nav class="flex space-x-6">
+                <a href="#" class="nav-link text-gray-700 hover:text-pink-500 transition duration-300">Nomut Aoot</a>
+                <a href="#" class="nav-link text-gray-700 hover:text-pink-500 transition duration-300">Homes</a>
+                <a href="#" class="nav-link text-gray-700 hover:text-pink-500 transition duration-300">Aburfing</a>
+                <a href="#" class="nav-link text-gray-700 hover:text-pink-500 transition duration-300">Collont</a>
+                <a href="#" class="nav-link text-gray-700 hover:text-pink-500 transition duration-300">Sigant</a>
+            </nav>
+        </div>
     </header>
-    
-    <section class="hero">
-        <img src="images/Gemini_Generated_Icecream.jpg" height="300px">
-    </section>
-    
-    <section class="about">
-        <h2>Why Choose Us?</h2>
-        <p>We serve happiness in every scoop with fresh ingredients and vibrant flavors.</p>
-    </section>
 
-    <section class="flavors">
-        <h2>Our Best-Selling Flavors</h2>
-        <ul>
-            <li>Rainbow Swirl</li>
-            <li>Bubblegum Bliss</li>
-            <li>Cotton Candy Dream</li>
-            <li>Chocolate Explosion</li>
-        </ul>
-    </section>
+    <main class="container mx-auto flex-grow flex items-center justify-center px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h1 class="hero-title text-pink-700 mb-4">Conk sturany a <span class="text-yellow-600">ICE CREAM</span> formurir syded</h1>
+                <p class="hero-subtitle text-gray-600 mb-8">Inee of vereyt</p>
+                <button class="primary-button bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white rounded-full shadow-md transition duration-300">Sere Horee</button>
+            </div>
 
-    <footer>
-        <p>Visit Us Today! 🍦 | Follow us on social media</p>
+            <div class="hero-image-container">
+                <img src="Gemini_Generated_Icecream.jpg" alt="Ice Cream and Children" class="hero-image rounded-xl shadow-lg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white/80 backdrop-blur-md py-4 px-6 rounded-t-xl shadow-md">
+        <div class="container mx-auto text-center text-gray-600">
+            © 2024 Ice Cream Paradise. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
