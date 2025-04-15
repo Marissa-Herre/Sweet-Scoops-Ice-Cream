@@ -1,0 +1,65 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffeb3b;
+    text-align: center;
+    color: #ff4081;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.about, .flavors {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flavors ul {
+    list-style: none;
+    padding: 0;
+}
+
+.flavors li {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #ff4081;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .about, .flavors {
+        margin: 5px;
+        padding: 15px;
+    }
+    
+    .flavors li {
+        display: block;
+        margin: 5px auto;
+    }
+}
